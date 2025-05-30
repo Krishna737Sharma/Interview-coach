@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Emotion Coach</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Real-Time Emotion Coach</h1>
+            <p>Improve your communication skills with AI-powered emotion detection</p>
+        </header>
+
+        <main>
+            <div class="video-section">
+                <div class="video-container">
+                    <video id="videoElement" autoplay muted playsinline></video>
+                    <canvas id="overlayCanvas"></canvas>
+                </div>
+                
+                <div class="controls">
+                    <button id="startBtn" class="btn btn-primary">Start Coaching</button>
+                    <button id="stopBtn" class="btn btn-secondary" disabled>Stop Coaching</button>
+                </div>
+            </div>
+
+            <div class="feedback-section">
+                <div class="emotion-display">
+                    <h3>Current Emotion</h3>
+                    <div id="currentEmotion" class="emotion-badge">
+                        <span class="emotion-text">Ready to start</span>
+                        <span class="confidence">0%</span>
+                    </div>
+                </div>
+
+                <div class="coaching-feedback">
+                    <h3>Live Coaching</h3>
+                    <div id="feedbackContainer" class="feedback-container">
+                        <p class="initial-message">Click "Start Coaching" to begin emotion analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="metrics-section">
+                <div class="metric-card">
+                    <h4>Audio Analysis</h4>
+                    <div id="audioMetrics">
+                        <div class="metric">
+                            <span class="label">Voice Confidence:</span>
+                            <span id="voiceConfidence" class="value">--</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Speech Rate:</span>
+                            <span id="speechRate" class="value">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <h4>Video Analysis</h4>
+                    <div id="videoMetrics">
+                        <div class="metric">
+                            <span class="label">Face Detected:</span>
+                            <span id="faceDetected" class="value">No</span>
+                        </div>
+                        <div class="metric">
+                            <span class="label">Expression Confidence:</span>
+                            <span id="expressionConfidence" class="value">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h3>Feedback History</h3>
+                <div id="historyContainer" class="history-container">
+                    <p class="no-history">No feedback history yet</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with Edge AI for Privacy & Performance</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+  "audio_emotions": {
+    "labels": ["angry", "calm", "disgust", "fear", "happy", "neutral", "sad", "surprise"],
+    "coaching_messages": {
+      "angry": [
+        "Take a deep breath and lower your voice tone",
+        "Try to speak more calmly to convey your message better",
+        "Your tone sounds intense - consider pausing before speaking"
+      ],
+      "calm": [
+        "Great! Your voice sounds composed and confident",
+        "Perfect tone - you sound very professional",
+        "Excellent emotional control in your speech"
+      ],
+      "disgust": [
+        "Your tone might come across as dismissive",
+        "Try to maintain a more neutral tone",
+        "Consider rephrasing with a more positive approach"
+      ],
+      "fear": [
+        "You sound uncertain - try to speak with more confidence",
+        "Take a moment to collect your thoughts",
+        "Remember to breathe and speak at a steady pace"
+      ],
+      "happy": [
+        "Your enthusiasm is coming through nicely!",
+        "Great energy in your voice",
+        "Your positive tone is engaging"
+      ],
+      "neutral": [
+        "Good baseline - maintain this steady tone",
+        "Your voice sounds professional and clear",
+        "Nice balanced emotional expression"
+      ],
+      "sad": [
+        "Your voice sounds down - try to lift your energy",
+        "Consider speaking with more enthusiasm",
+        "Remember to project confidence in your voice"
+      ],
+      "surprise": [
+        "Your tone shows good engagement",
+        "Nice expressive quality in your voice",
+        "Your surprise comes through clearly"
+      ]
+    }
+  },
+  "video_emotions": {
+    "labels": ["angry", "disgust", "fear", "happy", "neutral", "sad", "surprise"],
+    "coaching_messages": {
+      "angry": [
+        "Your facial expression looks tense - try to relax",
+        "Consider softening your expression",
+        "Take a moment to compose your facial expression"
+      ],
+      "disgust": [
+        "Your expression might appear dismissive to others",
+        "Try to maintain a more neutral facial expression",
+        "Consider showing more openness in your expression"
+      ],
+      "fear": [
+        "You look worried - try to appear more confident",
+        "Relax your facial muscles",
+        "Remember to maintain eye contact and open expression"
+      ],
+      "happy": [
+        "Great! Your smile is warm and engaging",
+        "Perfect - you look approachable and friendly",
+        "Your positive expression is very welcoming"
+      ],
+      "neutral": [
+        "Good professional expression",
+        "You look composed and attentive",
+        "Nice balanced facial expression"
+      ],
+      "sad": [
+        "Try to lift your expression - you look downcast",
+        "Consider showing more energy in your face",
+        "Remember to maintain an engaged expression"
+      ],
+      "surprise": [
+        "Your expression shows good engagement",
+        "Nice expressive response",
+        "Your surprise looks natural and authentic"
+      ]
+    }
+  },
+  "combination_coaching": {
+    "confident": "Excellent! Both your voice and expression show great confidence",
+    "nervous": "Take a deep breath - both your voice and face show some nervousness",
+    "engaged": "Perfect! You appear fully engaged both vocally and visually",
+    "distracted": "Try to focus - you seem distracted in both voice and expression",
+    "professional": "Great professional presence in both voice and appearance",
+    "inconsistent": "Your voice and facial expression don't match - try to align them"
+  }
+}
